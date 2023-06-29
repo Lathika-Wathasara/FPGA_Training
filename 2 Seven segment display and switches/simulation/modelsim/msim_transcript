@@ -1,0 +1,38 @@
+# Reading pref.tcl
+# do Seven_seg_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Seven_seg.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:08:59 on Jun 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+." Seven_seg.svo 
+# -- Compiling module Seven_seg
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Seven_seg
+# End time: 10:09:00 on Jun 08,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.hard_block
+# vsim work.hard_block 
+# Start time: 10:13:05 on Jun 08,2023
+# Loading sv_std.std
+# Loading work.hard_block
+vsim work.hard_block
+# End time: 10:13:16 on Jun 08,2023, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim work.hard_block 
+# Start time: 10:13:16 on Jun 08,2023
+# Loading sv_std.std
+# Loading work.hard_block
+# End time: 10:14:29 on Jun 08,2023, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0

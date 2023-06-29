@@ -1,0 +1,53 @@
+|Seven_seg
+sw[0] => sw[0].IN1
+sw[1] => sw[1].IN1
+sw[2] => sw[2].IN1
+sw[3] => sw[3].IN1
+sw[4] => sw[4].IN1
+sw[5] => sw[5].IN1
+sw[6] => sw[6].IN1
+sw[7] => sw[7].IN1
+LED[0] << seven_segment:sv_1.port1
+LED[1] << seven_segment:sv_1.port1
+LED[2] << seven_segment:sv_1.port1
+LED[3] << seven_segment:sv_1.port1
+LED[4] << seven_segment:sv_1.port1
+LED[5] << seven_segment:sv_1.port1
+LED[6] << seven_segment:sv_1.port1
+LED[7] << seven_segment:sv_2.port1
+LED[8] << seven_segment:sv_2.port1
+LED[9] << seven_segment:sv_2.port1
+LED[10] << seven_segment:sv_2.port1
+LED[11] << seven_segment:sv_2.port1
+LED[12] << seven_segment:sv_2.port1
+LED[13] << seven_segment:sv_2.port1
+
+
+|Seven_seg|seven_segment:sv_1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+seg_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Seven_seg|seven_segment:sv_2
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+seg_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

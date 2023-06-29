@@ -1,0 +1,60 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  c:/intelfpga_lite/20.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/20.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  systemverilog
+Simulation Mode       :  GUI
+Sim Output File       :  Seven_seg.svo
+Sim SDF file          :  Seven_seg__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File Seven_seg_run_msim_gate_systemverilog.do already exists - backing up current file as Seven_seg_run_msim_gate_systemverilog.do.bak4
+Probing transcript
+ModelSim-Altera Info: # Reading pref.tcl
+ModelSim-Altera Info: # do Seven_seg_run_msim_gate_systemverilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -sv -work work +incdir+. {Seven_seg.svo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 10:08:59 on Jun 08,2023
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+." Seven_seg.svo 
+ModelSim-Altera Info: # -- Compiling module Seven_seg
+ModelSim-Altera Info: # -- Compiling module hard_block
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	Seven_seg
+ModelSim-Altera Info: # End time: 10:09:00 on Jun 08,2023, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim work.hard_block
+ModelSim-Altera Info: # vsim work.hard_block 
+ModelSim-Altera Info: # Start time: 10:13:05 on Jun 08,2023
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Info: vsim work.hard_block
+ModelSim-Altera Info: # End time: 10:13:16 on Jun 08,2023, Elapsed time: 0:00:11
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vsim work.hard_block 
+ModelSim-Altera Info: # Start time: 10:13:16 on Jun 08,2023
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Info: # End time: 10:14:29 on Jun 08,2023, Elapsed time: 0:01:13
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+Info: NativeLink simulation flow was successful
